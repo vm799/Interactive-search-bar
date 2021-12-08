@@ -45,7 +45,7 @@ background-color: indianred;
     background-color:lightcoral;
     padding: 1em;
 }
-#dwarf {
+.dwarf {
 background-color: lawngreen;
 padding: 0.5em;
 margin: 0.5em;
@@ -75,5 +75,32 @@ label {
     
 }
 
+.bounce {
+   position: relative;
+    background:lightskyblue;
+    animation:bounce 2s infinite;
+  }
+  
+ @keyframes bounce {
+    0%       { bottom:5px; }
+    25%, 75% { bottom:10px; }
+    50%      { bottom:20px; }
+    100%     {bottom:0;}
+  }
 
-
+  .border {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #fff 20%, #fff 40%, #ECD08C 50%, #ECD08C 55%, #fff 70%, #fff 100%);
+    background-size: 200% auto;
+    
+    animation: shine 3s linear infinite;
+  }
+  
+  /*Begin shimmer code*/
+  
+  @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }fff
